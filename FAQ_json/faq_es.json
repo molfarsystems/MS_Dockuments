@@ -1,0 +1,66 @@
+[
+ {
+  "q": "Acerca de la app",
+  "a": "[b]Molfar System[/b] es tu consejo personal de IA. En lugar de preguntar a una sola red neuronal, reúnes una [b]reunión[/b]: hasta cuatro participantes de IA de distintos proveedores (Google, NVIDIA, OpenRouter), cada uno con su rol, respondiendo de forma independiente.\n\nEl [b]Orquestador[/b] es el quinto: dirige las rondas, compara respuestas y prepara un resumen único. El [b]Secretario[/b] es el sexto: gestiona los documentos del proyecto y redacta el protocolo a demanda.\n\nPara preguntas rápidas está [b]Haiduk[/b] — un chat individual que puede \"vestirse\" con cualquier rol.\n\nTus claves API se quedan solo en tu dispositivo. Sitio del proyecto: [ref=https://molfar.nova-hata.com][color=4db6ac][u]molfar.nova-hata.com[/u][/color][/ref]"
+ },
+ {
+  "q": "¿Por dónde empiezo?",
+  "a": "1. Menú > [b]Configuración de IA[/b] > pega la clave API de al menos un proveedor (gratis; ver \"¿Cómo añadir una clave API?\").\n2. Crea un proyecto de reunión y en [b]Configuración de participantes[/b] llena los slots: Orquestador + 1–2 participantes ya es una reunión funcional.\n3. Haz tu pregunta en el campo \"Pregunta al Orquestador\": la ronda llega a todos y las respuestas se reúnen en pestañas.\n\nPara calentar, prueba Haiduk: un modelo, cero configuración."
+ },
+ {
+  "q": "¿Cuánto cuesta?",
+  "a": "La app es [b]gratuita[/b]. Necesita claves API de los proveedores — [b]también gratuitas[/b]: Google AI Studio, NVIDIA NIM y OpenRouter las emiten en sus sitios.\n\nLos modelos gratuitos tienen límites de peticiones del proveedor — suficientes para el uso normal. Los modelos con [b]$[/b] en OpenRouter son de pago: consumen tokens de tu saldo de OpenRouter. Si no quieres pagar, simplemente no los elijas."
+ },
+ {
+  "q": "¿Cómo creo una reunión?",
+  "a": "1. En la pantalla principal crea un proyecto de tipo \"Reunión\" y ponle nombre.\n2. [b]Configuración de participantes[/b]: slots 1–4 — participantes (rol + modelo cada uno), 5 — Orquestador, 6 — Secretario. Mínimo: Orquestador + un participante. Toca \"Guardar\".\n3. Si quieres, añade [b]documentos[/b] al proyecto y repártelos a los participantes (contador-insignia arriba de la pestaña).\n4. Pregunta en el campo \"Pregunta al Orquestador\": la ronda se envía a todos, cada pestaña muestra su respuesta y el Orquestador resume.\n\n[b]Exportaciones y protocolo[/b]\n• El botón de menú (tres puntos) en cualquier pestaña > exporta el chat a un archivo de texto (carpeta Download/Molfar_s-…): cabecera con slot/rol/modelo, cada respuesta firmada.\n• Pestaña del Secretario > comando de protocolo: redacta el protocolo de la reunión con la lista de participantes y la cronología, y lo guarda como archivo.\nLas exportaciones son también tu copia de seguridad: los archivos viven fuera de la app."
+ },
+ {
+  "q": "¿Qué son los roles?",
+  "a": "Un rol es la \"personalidad\" de la IA: [b]prompt[/b] (quién soy) + [b]skill[/b] (cómo trabajo). De fábrica — [b]23 roles[/b]: 17 especialistas para participantes (juristas, desarrolladores, ciberseguridad, un cuerpo técnico de fútbol, un matemático…) y 6 conductores para el Orquestador (Moderador, Árbitro, Analista, Jefe de proyecto, Juez penal, Analista de apuestas).\n\nCrea el tuyo en la sección \"Roles\": nombre, descripción, prompt, skill — y aparece en las listas junto a los integrados. Un rol funciona en reuniones y en Haiduk."
+ },
+ {
+  "q": "¿Qué es un Prompt?",
+  "a": "El [b]prompt[/b] es la instrucción de sistema que define QUIÉN es el rol: profesión, carácter, estilo de respuesta. Ejemplo: \"Eres un abogado experimentado, respondes formalmente y citas artículos de ley.\"\n\nSe edita tocando el bloque \"Prompt\": a mano o cargando un archivo .txt/.md con el icono de carpeta. Se guarda en el prompt.md del rol, límite 5000 caracteres. Escríbelo en el idioma en que quieras las respuestas."
+ },
+ {
+  "q": "¿Qué es una Skill?",
+  "a": "Una [b]skill[/b] son reglas y pasos concretos del rol: listas de control, plantillas, orden de acciones. El prompt dice \"quién soy\"; la skill, \"cómo trabajo exactamente\".\n\nMatiz del Orquestador: su skill se apila [b]sobre[/b] las reglas fijas del puesto de conductor (la mecánica de rondas está integrada en la app) — escribe solo estilo de conducción y criterios, sin repetir la mecánica."
+ },
+ {
+  "q": "¿Dónde consigo prompts y skills listos?",
+  "a": "En nuestro sitio [b][ref=https://molfar.nova-hata.com][color=4db6ac][u]molfar.nova-hata.com[/u][/color][/ref][/b] — una sección con prompts y skills listos para distintas tareas.\n\nCómo aplicarlos: guarda el archivo (.txt o .md) en el teléfono > abre el rol > editor de prompt o skill > icono de carpeta > elige el archivo. El texto se inserta, \"Guardar\" — y listo. El nombre de tu archivo no importa: el editor lo guarda como prompt.md / skill.md."
+ },
+ {
+  "q": "¿Quién es el Secretario y qué es un protocolo?",
+  "a": "El [b]Secretario[/b] es el slot 6 con dos tareas:\n• [b]Base de conocimiento[/b]: indexa todos los documentos del proyecto y los sirve a los participantes por fragmentos — así las reuniones funcionan incluso con archivos grandes.\n• [b]Protocolo[/b]: a demanda redacta el documento de la reunión — lista de participantes (slot · rol · modelo), cronología, conclusiones — y lo guarda como archivo.\n\nAsígnale un modelo — sus reglas ya están integradas, no necesita rol. El contador de su pestaña muestra todo el pool de documentos."
+ },
+ {
+  "q": "¿Cómo funcionan los documentos?",
+  "a": "El proyecto tiene un [b]pool de documentos[/b] compartido (se llena en la tarjeta del proyecto o vía la pestaña del Secretario). Del pool se reparten a los participantes: contador-insignia arriba de la pestaña > hasta [b]5 archivos por slot[/b].\n\nUn participante ve solo sus documentos. Los archivos pequeños entran completos al contexto; los grandes el Secretario los sirve por [b]fragmentos[/b] desde la base de conocimiento — según tu pregunta.\n\nHaiduk tiene documentos propios: el clip, hasta 5 archivos de 1 MB."
+ },
+ {
+  "q": "¿Qué es Haiduk y en qué se diferencia de una reunión?",
+  "a": "[b]Haiduk[/b] es un chat individual rápido con un solo modelo, sin reunión. Puede:\n• \"vestirse\" con cualquier rol (botón \"+\");\n• aceptar documentos (clip, hasta 5 archivos);\n• búsqueda web (globo) en proveedores compatibles.\n\nDiferencia con la reunión: una opinión en vez de un consejo — pero al instante y sin configurar nada. El historial persiste; \"Limpiar chat\" borra solo mensajes (los documentos quedan) y cambiar de rol es un reinicio total."
+ },
+ {
+  "q": "Búsqueda web (globo): ¿qué hace y por qué a veces no está disponible?",
+  "a": "El [b]globo[/b] activa la búsqueda web: el modelo recibe resultados frescos de internet y cita fuentes (título + dirección).\n\nNo funciona en todas partes: no todos los proveedores y modelos la admiten — entonces el globo está inactivo. En OpenRouter la búsqueda es [b]de pago[/b] — la app avisa antes de activarla. Con la búsqueda apagada, el modelo responde con su conocimiento y nunca afirma haber \"buscado\"."
+ },
+ {
+  "q": "¿Cómo añadir una clave API?",
+  "a": "Menú > [b]Configuración de IA[/b] > pega la clave en el campo del proveedor > toca el icono del disquete. El proveedor se activa automáticamente.\n\nDónde conseguir claves gratuitas:\n• [b]Google[/b]: [ref=https://aistudio.google.com/apikey][color=4db6ac][u]aistudio.google.com/apikey[/u][/color][/ref] > \"Create API key\"\n• [b]NVIDIA[/b]: [ref=https://build.nvidia.com][color=4db6ac][u]build.nvidia.com[/u][/color][/ref] > regístrate > \"Get API Key\" en cualquier página de modelo\n• [b]OpenRouter[/b]: [ref=https://openrouter.ai/keys][color=4db6ac][u]openrouter.ai/keys[/u][/color][/ref] > \"Create Key\"\n\nEl botón \"Test\" comprueba la conexión. Las claves se guardan solo en este dispositivo."
+ },
+ {
+  "q": "¿Dónde se guardan mis datos y claves?",
+  "a": "Todo es local, en tu dispositivo: proyectos, historiales, roles, documentos y claves API viven en la carpeta de la app. Nada se envía a servidores de Molfar; las claves van solo a los propios proveedores de IA en el momento de la petición.\n\nLa otra cara: [b]desinstalar la app borra todos los datos[/b]. Sobreviven las exportaciones de chats y los protocolos — se guardan en Download/Molfar… fuera de la app. Exporta las reuniones importantes."
+ },
+ {
+  "q": "El modelo no responde o muestra un error — ¿qué hago?",
+  "a": "Comprueba en orden:\n1. [b]Clave[/b]: Configuración de IA > botón \"Test\" del proveedor.\n2. [b]Límites[/b]: los modelos gratuitos tienen límites de peticiones — espera un minuto o cambia de modelo.\n3. [b]Timeout[/b] (\"no respondió en 220 s\"): pregunta pesada + documentos grandes — simplifica la petición o elige un modelo más rápido.\n4. Error con texto del proveedor — el problema es suyo: prueba otro modelo o más tarde.\n\nSi la app se cerró con error, la pantalla muestra un informe con botón de copiar: envíanoslo por el sitio web."
+ },
+ {
+  "q": "¿Cómo elimino un proyecto y qué desaparece?",
+  "a": "Menú de la tarjeta del proyecto > \"Eliminar\". Desaparece [b]todo lo suyo[/b]: chats de todos los slots, participantes, documentos (archivos y asignaciones), base de conocimiento, memoria a largo plazo.\n\nNo desaparecen: exportaciones y protocolos en Download (están fuera de la app) y los roles — son comunes a todos los proyectos.\n\nLa acción es irreversible — exporta antes lo importante."
+ }
+]

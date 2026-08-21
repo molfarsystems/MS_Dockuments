@@ -1,0 +1,66 @@
+[
+ {
+  "q": "Über die App",
+  "a": "[b]Molfar System[/b] ist Ihr persönliches KI-Konsilium. Statt eine einzelne KI zu fragen, stellen Sie eine [b]Besprechung[/b] zusammen: bis zu vier KI-Teilnehmer verschiedener Anbieter (Google, NVIDIA, OpenRouter), jeder mit eigener Rolle, antworten unabhängig.\n\nDer [b]Orchestrator[/b] ist der fünfte: Er führt Runden, vergleicht Antworten und erstellt ein gemeinsames Fazit. Der [b]Sekretär[/b] ist der sechste: Er verwaltet Projektdokumente und schreibt auf Befehl ein Protokoll.\n\nFür schnelle Fragen gibt es [b]Haiduk[/b] — einen Einzelchat, der jede Rolle \"anziehen\" kann.\n\nIhre API-Schlüssel bleiben nur auf dem Gerät. Website: [ref=https://molfar.nova-hata.com][color=4db6ac][u]molfar.nova-hata.com[/u][/color][/ref]"
+ },
+ {
+  "q": "Womit fange ich an?",
+  "a": "1. Menü > [b]KI-Einstellungen[/b] > API-Schlüssel mindestens eines Anbieters einfügen (kostenlos; siehe \"Wie füge ich einen API-Schlüssel hinzu?\").\n2. Besprechungsprojekt erstellen und in den [b]Teilnehmer-Einstellungen[/b] Slots belegen: Orchestrator + 1–2 Teilnehmer genügen.\n3. Frage ins Feld \"Frag den Orchestrator\" — die Runde geht an alle, Antworten sammeln sich in Tabs.\n\nZum Aufwärmen eignet sich Haiduk: ein Modell, null Einrichtung."
+ },
+ {
+  "q": "Was kostet das?",
+  "a": "Die App ist [b]kostenlos[/b]. Sie braucht API-Schlüssel der Anbieter — [b]ebenfalls kostenlos[/b]: Google AI Studio, NVIDIA NIM und OpenRouter vergeben sie auf ihren Websites.\n\nKostenlose Modelle haben Anfrage-Limits des Anbieters — für normale Arbeit reicht das. Modelle mit [b]$[/b] bei OpenRouter sind kostenpflichtig: Sie verbrauchen Tokens von Ihrem OpenRouter-Guthaben. Wer nicht zahlen will, wählt sie einfach nicht."
+ },
+ {
+  "q": "Wie erstelle ich eine Besprechung?",
+  "a": "1. Auf dem Startbildschirm ein Projekt vom Typ \"Besprechung\" anlegen und benennen.\n2. [b]Teilnehmer-Einstellungen[/b]: Slots 1–4 — Teilnehmer (je Rolle + Modell), 5 — Orchestrator, 6 — Sekretär. Minimum: Orchestrator + ein Teilnehmer. \"Speichern\".\n3. Bei Bedarf [b]Dokumente[/b] ins Projekt laden und Teilnehmern zuteilen (Badge-Zähler oben im Tab).\n4. Frage ins Feld \"Frag den Orchestrator\": Die Runde geht an alle, jeder Tab zeigt seine Antwort, der Orchestrator fasst zusammen.\n\n[b]Exporte und Protokoll[/b]\n• Die Drei-Punkte-Menütaste in jedem Tab > Chat-Export als Textdatei (Ordner Download/Molfar_s-…): Kopf mit Slot/Rolle/Modell, jede Antwort signiert.\n• Sekretär-Tab > Protokollbefehl: erstellt ein Besprechungsprotokoll mit Teilnehmerliste und Chronologie und speichert es als Datei.\nExporte sind zugleich Ihr Backup: Die Dateien liegen außerhalb der App."
+ },
+ {
+  "q": "Was sind Rollen?",
+  "a": "Eine Rolle ist die \"Persönlichkeit\" der KI: [b]Prompt[/b] (wer ich bin) + [b]Skill[/b] (wie ich arbeite). Ab Werk — [b]23 Rollen[/b]: 17 Spezialisten für Teilnehmer (Juristen, Entwickler, Cybersicherheit, ein Fußballstab, ein Mathematiker…) und 6 Leiter für den Orchestrator (Moderator, Schiedsrichter, Analyst, Projektleiter, Strafrichter, Buchmacher-Analyst).\n\nEigene Rollen erstellen Sie im Bereich \"Rollen\": Name, Beschreibung, Prompt, Skill — sie erscheinen gleichberechtigt in den Listen. Eine Rolle funktioniert in Besprechungen und in Haiduk."
+ },
+ {
+  "q": "Was ist ein Prompt?",
+  "a": "Der [b]Prompt[/b] ist die Systeminstruktion, WER die Rolle ist: Beruf, Charakter, Antwortstil. Beispiel: \"Du bist ein erfahrener Jurist, antwortest formell und zitierst Gesetzesartikel.\"\n\nBearbeitung per Tipp auf den Block \"Prompt\": manuell oder durch Laden einer .txt/.md-Datei über das Ordner-Symbol. Gespeichert in der prompt.md der Rolle, Limit 5000 Zeichen. Schreiben Sie in der Sprache, in der Sie Antworten wollen."
+ },
+ {
+  "q": "Was ist ein Skill?",
+  "a": "Ein [b]Skill[/b] sind konkrete Regeln und Arbeitsschritte der Rolle: Checklisten, Vorlagen, Reihenfolgen. Der Prompt sagt \"wer ich bin\", der Skill — \"wie genau ich arbeite\".\n\nBesonderheit beim Orchestrator: Sein Skill liegt [b]über[/b] den festen Regeln des Leiterplatzes (die Rundenmechanik steckt in der App) — schreiben Sie also nur Leitungsstil und Kriterien, ohne die Mechanik zu wiederholen."
+ },
+ {
+  "q": "Wo bekomme ich fertige Prompts und Skills?",
+  "a": "Auf unserer Website [b][ref=https://molfar.nova-hata.com][color=4db6ac][u]molfar.nova-hata.com[/u][/color][/ref][/b] — ein Bereich mit fertigen Prompts und Skills für verschiedene Aufgaben.\n\nAnwendung: Datei (.txt oder .md) aufs Handy speichern > Rolle öffnen > Prompt- oder Skill-Editor > Ordner-Symbol > Datei wählen. Der Text wird eingesetzt, \"Speichern\" — fertig. Der Dateiname ist egal: Der Editor speichert als prompt.md / skill.md."
+ },
+ {
+  "q": "Wer ist der Sekretär und was ist ein Protokoll?",
+  "a": "Der [b]Sekretär[/b] ist Slot 6 mit zwei Aufgaben:\n• [b]Wissensbasis[/b]: Er indexiert alle Projektdokumente und liefert sie den Teilnehmern als Fragmente — so funktionieren Besprechungen auch mit großen Dateien.\n• [b]Protokoll[/b]: Auf Befehl erstellt er ein Besprechungsdokument — Teilnehmerliste (Slot · Rolle · Modell), Chronologie, Ergebnisse — und speichert es als Datei.\n\nWeisen Sie ihm ein Modell zu — seine Regeln sind eingebaut, keine Rolle nötig. Der Zähler in seinem Tab zeigt den gesamten Dokumentenpool."
+ },
+ {
+  "q": "Wie funktionieren Dokumente?",
+  "a": "Ein Projekt hat einen gemeinsamen [b]Dokumentenpool[/b] (in der Projektkarte oder über den Sekretär-Tab befüllt). Aus dem Pool werden Dateien den Teilnehmern zugeteilt: Badge-Zähler oben im Tab > bis zu [b]5 Dateien pro Slot[/b].\n\nEin Teilnehmer sieht nur seine eigenen Dokumente. Kleine Dateien gehen vollständig in den Kontext, große liefert der Sekretär als [b]Fragmente[/b] aus der Wissensbasis — passend zur Frage.\n\nHaiduk hat eigene Dokumente: Büroklammer, bis zu 5 Dateien, je 1 MB."
+ },
+ {
+  "q": "Was ist Haiduk und worin unterscheidet er sich von einer Besprechung?",
+  "a": "[b]Haiduk[/b] ist ein schneller Einzelchat mit einem Modell, ohne Besprechung. Er kann:\n• jede Rolle \"anziehen\" (Taste \"+\");\n• Dokumente annehmen (Büroklammer, bis zu 5);\n• Websuche (Globus) bei unterstützenden Anbietern.\n\nUnterschied zur Besprechung: eine Meinung statt eines Konsiliums — dafür sofort und ohne Einrichtung. Der Verlauf bleibt erhalten; \"Chat leeren\" entfernt nur Nachrichten (Dokumente bleiben), ein Rollenwechsel ist ein kompletter Reset."
+ },
+ {
+  "q": "Websuche (Globus): was tut sie und warum ist sie manchmal nicht verfügbar?",
+  "a": "Der [b]Globus[/b] aktiviert die Websuche: Das Modell erhält frische Ergebnisse aus dem Internet und zitiert Quellen (Titel + Adresse).\n\nSie funktioniert nicht überall: Nicht alle Anbieter und Modelle unterstützen die Suche — dann ist der Globus inaktiv. Bei OpenRouter ist die Websuche [b]kostenpflichtig[/b] — die App warnt vor dem Aktivieren. Ist die Suche aus, antwortet das Modell aus eigenem Wissen und behauptet nie, es habe \"gesucht\"."
+ },
+ {
+  "q": "Wie füge ich einen API-Schlüssel hinzu?",
+  "a": "Menü > [b]KI-Einstellungen[/b] > Schlüssel ins Anbieterfeld einfügen > Disketten-Symbol antippen. Der Anbieter wird automatisch aktiviert.\n\nKostenlose Schlüssel:\n• [b]Google[/b]: [ref=https://aistudio.google.com/apikey][color=4db6ac][u]aistudio.google.com/apikey[/u][/color][/ref] > \"Create API key\"\n• [b]NVIDIA[/b]: [ref=https://build.nvidia.com][color=4db6ac][u]build.nvidia.com[/u][/color][/ref] > registrieren > \"Get API Key\" auf einer Modellseite\n• [b]OpenRouter[/b]: [ref=https://openrouter.ai/keys][color=4db6ac][u]openrouter.ai/keys[/u][/color][/ref] > \"Create Key\"\n\nDie Taste \"Test\" prüft die Verbindung. Schlüssel bleiben nur auf diesem Gerät."
+ },
+ {
+  "q": "Wo werden meine Daten und Schlüssel gespeichert?",
+  "a": "Alles lokal, auf Ihrem Gerät: Projekte, Verläufe, Rollen, Dokumente und API-Schlüssel liegen im App-Ordner. An Molfar-Server wird nichts gesendet; Schlüssel gehen nur an die KI-Anbieter selbst im Moment der Anfrage.\n\nDie Kehrseite: [b]Deinstallation löscht alle Daten[/b]. Erhalten bleiben Chat-Exporte und Protokolle — sie liegen in Download/Molfar… außerhalb der App. Wichtige Besprechungen: exportieren."
+ },
+ {
+  "q": "Das Modell antwortet nicht oder zeigt einen Fehler — was tun?",
+  "a": "Der Reihe nach prüfen:\n1. [b]Schlüssel[/b]: KI-Einstellungen > \"Test\" des Anbieters.\n2. [b]Limits[/b]: Kostenlose Modelle haben Anfrage-Limits — eine Minute warten oder das Modell wechseln.\n3. [b]Timeout[/b] (\"hat in 220 s nicht geantwortet\"): schwere Frage + große Dokumente — Anfrage vereinfachen oder ein schnelleres Modell wählen.\n4. Fehler mit Anbietertext — Problem auf deren Seite: anderes Modell oder später versuchen.\n\nBei einem Absturz zeigt der Bildschirm einen Bericht mit Kopiertaste: Senden Sie ihn uns über die Website."
+ },
+ {
+  "q": "Wie lösche ich ein Projekt und was verschwindet dabei?",
+  "a": "Menü der Projektkarte > \"Löschen\". Es verschwindet [b]alles davon[/b]: Chats aller Slots, Teilnehmerliste, Dokumente (Dateien und Zuordnungen), Wissensbasis, Langzeitgedächtnis.\n\nErhalten bleiben: Exporte und Protokolle in Download (außerhalb der App) und die Rollen selbst — sie sind projektübergreifend.\n\nDie Aktion ist unumkehrbar — Wichtiges zuerst exportieren."
+ }
+]

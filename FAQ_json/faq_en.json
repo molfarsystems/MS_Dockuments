@@ -1,0 +1,66 @@
+[
+ {
+  "q": "About the app",
+  "a": "[b]Molfar System[/b] is your personal AI council. Instead of asking one neural network, you assemble a [b]meeting[/b]: up to four AI participants from different providers (Google, NVIDIA, OpenRouter), each with its own role, answering independently.\n\nThe [b]Orchestrator[/b] is the fifth: it runs rounds, compares answers and prepares a single summary. The [b]Secretary[/b] is the sixth: it handles project documents and writes a protocol on demand.\n\nFor quick questions there is [b]Haiduk[/b] — a single chat that can be \"dressed\" into any role.\n\nYour API keys stay on your device only. Project website: [ref=https://molfar.nova-hata.com][color=4db6ac][u]molfar.nova-hata.com[/u][/color][/ref]"
+ },
+ {
+  "q": "Where do I start?",
+  "a": "1. Menu > [b]AI Settings[/b] > paste an API key for at least one provider (free; see \"How to add an API key?\").\n2. Create a meeting project and fill the slots in [b]Participants settings[/b]: Orchestrator + 1–2 participants is already a working meeting.\n3. Ask your question in the \"Ask the Orchestrator\" field — the round goes to everyone, answers gather in tabs.\n\nFor a warm-up try Haiduk: one model, zero setup."
+ },
+ {
+  "q": "How much does it cost?",
+  "a": "The app is [b]free[/b]. It needs provider API keys — [b]also free[/b]: Google AI Studio, NVIDIA NIM and OpenRouter issue them on their websites.\n\nFree models have provider-side request limits — enough for normal work. Models marked [b]$[/b] on OpenRouter are paid: they consume tokens from your OpenRouter balance. Don't want to pay — simply don't pick them."
+ },
+ {
+  "q": "How do I create a meeting?",
+  "a": "1. On the home screen create a \"Meeting\" project and name it.\n2. [b]Participants settings[/b]: slots 1–4 — participants (role + model each), 5 — Orchestrator, 6 — Secretary. Minimum: Orchestrator + one participant. Tap \"Save\".\n3. Optionally add [b]documents[/b] to the project and hand them to participants (the badge counter at the top of a tab).\n4. Ask in the \"Ask the Orchestrator\" field: the round is sent to everyone, each tab shows its answer, the Orchestrator summarizes.\n\n[b]Exports and protocol[/b]\n• The three-dot menu button in any tab > export the chat to a text file (Download/Molfar_s-… folder): a header with slot/role/model, every answer signed.\n• The Secretary tab > protocol command: it composes a meeting protocol with the roster and chronology and saves it as a file.\nExports are also your backup: the files live outside the app."
+ },
+ {
+  "q": "What are roles?",
+  "a": "A role is the AI's \"personality\": a [b]prompt[/b] (who I am) + a [b]skill[/b] (how I work). Out of the box — [b]23 roles[/b]: 17 specialists for participants (lawyers, developers, cybersecurity, a football staff, a mathematician…) and 6 leaders for the Orchestrator (Moderator, Referee, Analyst, Project Manager, Criminal Judge, Bookmaker Analyst).\n\nCreate your own in the \"Roles\" section: name, description, prompt, skill — it appears in the lists alongside the built-in ones. One role works both in meetings and in Haiduk."
+ },
+ {
+  "q": "What is a Prompt?",
+  "a": "A [b]prompt[/b] is the system instruction defining WHO the role is: profession, character, answer style. Example: \"You are an experienced lawyer, you answer formally and cite law articles.\"\n\nEdit it by tapping the \"Prompt\" block: manually or by loading a .txt/.md file via the folder icon. It is saved into the role's prompt.md, limit 5000 characters. Write it in the language you want answers in."
+ },
+ {
+  "q": "What is a Skill?",
+  "a": "A [b]skill[/b] is the role's concrete rules and steps: checklists, templates, order of actions. If the prompt says \"who I am\", the skill says \"how exactly I work\".\n\nOrchestrator nuance: its skill is stacked [b]on top[/b] of the fixed leader-seat rules (the round mechanics are built into the app) — so in an orchestrator's skill write only the leading style and evaluation criteria, without repeating the mechanics."
+ },
+ {
+  "q": "Where do I get ready-made prompts and skills?",
+  "a": "On our website [b][ref=https://molfar.nova-hata.com][color=4db6ac][u]molfar.nova-hata.com[/u][/color][/ref][/b] — a section with ready prompts and skills for various tasks.\n\nHow to apply: save the file (.txt or .md) to your phone > open the role > the prompt or skill editor > the folder icon > pick the file. The text is inserted, \"Save\" — and the role is ready. Your file's name doesn't matter: the editor saves it as prompt.md / skill.md."
+ },
+ {
+  "q": "Who is the Secretary and what is a protocol?",
+  "a": "The [b]Secretary[/b] is slot 6 with two jobs:\n• [b]Knowledge base[/b]: it indexes all project documents and serves them to participants as fragments — so meetings work even with large files.\n• [b]Protocol[/b]: on command it composes a meeting document — the roster (slot · role · model), chronology, conclusions — and saves it as a file.\n\nAssign it a model — its working rules are built in, no role needed. The counter in its tab shows the whole project document pool."
+ },
+ {
+  "q": "How do documents work?",
+  "a": "A project has a shared [b]document pool[/b] (added in the project card or via the Secretary tab). From the pool files are handed to participants: the badge counter at the top of a tab > pick up to [b]5 files per slot[/b].\n\nA participant sees only its own documents. Small files go into the context in full; large ones the Secretary serves as [b]fragments[/b] from the knowledge base — matched to your question.\n\nHaiduk has its own documents: the paperclip, up to 5 files, 1 MB each."
+ },
+ {
+  "q": "What is Haiduk and how does it differ from a meeting?",
+  "a": "[b]Haiduk[/b] is a quick single chat with one model, no meeting. It can:\n• be \"dressed\" into any role (the \"+\" button);\n• accept documents (paperclip, up to 5 files);\n• web search (globe) on providers that support it.\n\nDifference from a meeting: one opinion instead of a council — but instant and with zero setup. History persists between launches; \"Clear chat\" removes messages only (documents stay), changing the role is a full reset."
+ },
+ {
+  "q": "Web search (globe): what does it do and why is it sometimes unavailable?",
+  "a": "The [b]globe[/b] enables web search: the model gets fresh results from the internet and cites sources (title + address).\n\nIt doesn't work everywhere: not all providers and models support search — then the globe is inactive. On OpenRouter web search is [b]paid[/b] — the app warns before enabling. With search off, the model answers from its own knowledge and never claims it \"searched the web\"."
+ },
+ {
+  "q": "How to add an API key?",
+  "a": "Menu > [b]AI Settings[/b] > paste the key into the provider's field > tap the diskette icon. The provider turns on automatically.\n\nWhere to get free keys:\n• [b]Google[/b]: [ref=https://aistudio.google.com/apikey][color=4db6ac][u]aistudio.google.com/apikey[/u][/color][/ref] > \"Create API key\"\n• [b]NVIDIA[/b]: [ref=https://build.nvidia.com][color=4db6ac][u]build.nvidia.com[/u][/color][/ref] > sign up > \"Get API Key\" on any model page\n• [b]OpenRouter[/b]: [ref=https://openrouter.ai/keys][color=4db6ac][u]openrouter.ai/keys[/u][/color][/ref] > \"Create Key\"\n\nThe \"Test\" button checks the connection. Keys are stored on this device only."
+ },
+ {
+  "q": "Where are my data and keys stored?",
+  "a": "Everything is local, on your device: projects, histories, roles, documents and API keys live in the app folder. Nothing is sent to Molfar servers; keys go only to the AI providers themselves at request time.\n\nThe flip side: [b]uninstalling the app deletes all data[/b]. What survives: chat exports and protocols — they are saved in Download/Molfar… and live separately. Export the meetings that matter."
+ },
+ {
+  "q": "The model doesn't answer or shows an error — what to do?",
+  "a": "Check in order:\n1. [b]Key[/b]: AI Settings > the provider's \"Test\" button.\n2. [b]Limits[/b]: free models have request limits — wait a minute or switch the model.\n3. [b]Timeout[/b] (\"did not respond in 220 s\"): a heavy question + large documents — simplify the request or pick a faster model.\n4. An error with the provider's text — the problem is on their side: try another model or later.\n\nIf the app crashed — the screen shows a report with a copy button: send it to us via the website."
+ },
+ {
+  "q": "How do I delete a project and what disappears?",
+  "a": "The project card menu > \"Delete\". [b]Everything of it[/b] disappears: chats of all slots, the roster, documents (files and assignments), the knowledge base, long-term memory.\n\nWhat stays: exports and protocols in Download (they are outside the app) and the roles themselves — they are shared across projects.\n\nThe action is irreversible — export the important things first."
+ }
+]
